@@ -9,11 +9,7 @@
     box-sizing: border-box;
 }
 
-body{
-    padding: 0px;
-    margin: 0px;
-    overflow-x:hidden;
-}
+
 
 html{
     background-color: rgb(26, 153, 111);
@@ -21,7 +17,7 @@ html{
     width: 100vw;
 }
 header{
-    background-color:rgb(5, 68, 5);
+    background-color:rgb(10, 68, 10);
      justify-content: space-between;
     align-items: center;
     display: flex;
@@ -58,12 +54,15 @@ ul > :hover {
     color: chocolate;
 }
 .logo > p{
-   font-size: 14px;
+    position: relative;
+    top: 5px;
+   font-size: 20px;
    color: white;
 }
 
 .hero{
     position: relative;
+    background-image: url('../Meu projeto/MEU PROJETO/sala  00.jpg');
 }
 .hero  img{
     width: 100%;
@@ -77,7 +76,7 @@ ul > :hover {
     top: 50%;
     left: 38%;
     transform: translate(-50%, -50%);
-    color:black;
+    color:white;
 
     font-size: 25px;
     margin: 0px;
@@ -85,7 +84,143 @@ ul > :hover {
     align-items: center;
 
 }
-.texto > p{
-    font-size: 0px;
-    
+.texto > h1{
+    position: relative;
+    top: -40px;
+
 }
+.texto > p{
+    position: relative;
+    font-size: 30px;
+    top: -210px;
+    left: 0px;
+   
+}
+div > p{
+    position: relative;
+    font-size: 15px;
+    top: -40px;
+
+}
+
+section#login{
+    position: absolute;
+    top: 25%;
+    right: -50px;
+    transform: translate(-40%);
+    background-image: linear-gradient(to top, #eed04975, #9fc05379, #bda43773);
+    padding: 10px;
+    border-radius: 10px;
+    border:2px solid rgba(255, 255, 255, 0.075) ;
+
+}
+
+div#formulario > h1{
+    text-align: center;
+    margin-bottom: 0px;
+    position: relative;
+    font-size: 30px;
+    color: white;
+    height: 50px;
+    left:5px;
+    top: -20px;
+   margin-top: 20px;
+
+}
+div#formulario > p{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+   
+}
+
+div#formulario p{
+     position: relative;
+     display: block;
+     font-size: 20px;
+     align-items: center;
+     color: white;
+     left: 20px;
+     top: -10px;
+}
+    
+form > div.campo{
+    position: relative;
+    background-color: rgba(0, 139, 139, 0.801);
+    border: 2px solid blue;
+    display: flex;
+    flex-direction: row;
+     gap: 10px;
+     align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+     border: 10px;
+    margin: 5px;
+    color:white;
+    border-radius: 10px;
+    border-radius: 10px 10px;
+    cursor: pointer;
+}
+ section div > p{
+    position: relative;
+    font-size: 25px;
+    color: white;
+}
+
+form > a.botao{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    gap: 5px;
+    width: 100%;
+    color:white;
+    padding: 0px;
+    margin-top: 20px;
+    text-decoration: none;
+    border-radius: 0px;
+}
+
+div.campo > input {
+  font-size: 1em;
+  height:60%;
+  border: 0px;
+  border-radius: 10px;
+  padding: 5px;
+  transform: translateY(-0px);
+  background-color: transparent;
+  
+}
+div.campo > input::placeholder{
+    
+    color: white;
+}
+
+
+form > input[type=submit] {
+    display: block;
+    font: size 1em;
+    width: 100%;
+    height: 40px;
+    background-color: #9FC053;
+     border: 1px solid black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[ type=submit]:hover {
+    background-color: #cbf06ff1;
+    color: black;
+}
+
+form > a.botao:hover{
+    background-color:#8b92bbbe;
+    color: black;
+}
+
+

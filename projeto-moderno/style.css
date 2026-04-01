@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.nav-items {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    text-transform: uppercase;
+
+}
+
+.nav-items a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.hero {
+    background-image: url("https://png.pngtree.com/background/20230401/original/pngtree-interior-home-improvement-background-picture-image_2251879.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+
+}
+
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+
+.hero h1,
+.hero h6,
+.hero p {
+    max-width: 680px;
+}
+
+.hero h6 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.hero h1 {
+    text-transform: uppercase;
+    font-size: 90px;
+
+}
+
+.hero p {
+    margin-bottom: 30px;
+}
+
+.button {
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: #896533;
+    border: none;
+    padding: 10px 30px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.container-buttons {
+    display: flex;
+    gap: 20px;
+}
