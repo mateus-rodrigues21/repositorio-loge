@@ -37,6 +37,15 @@ body {
     font-weight: bold;
 }
 
+.nav-items :hover {
+    background-color: cadetblue;
+    border-radius: 3px;
+    color: white;
+    transform: scale(1.3);
+
+
+}
+
 .hero {
     background-image: url("https://png.pngtree.com/background/20230401/original/pngtree-interior-home-improvement-background-picture-image_2251879.jpg");
     background-size: cover;
@@ -106,7 +115,7 @@ body {
     background-color: rgb(63, 114, 63);
 }
 
-.design .container{
+.design .container {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -143,20 +152,78 @@ body {
 
 }
 
-.infos{
+.info {}
 
-}
 
-.infos .container{
+.infos .container {
     display: flex;
+    justify-content: space-around;
 
 }
 
-.infos .item{
+.infos .item {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color:#e0d6c8;
+    background-color: #e0d6c8;
+    border-radius: 30px;
+    padding: 50px;
+    color: chocolate;
+}
+
+.infos .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0d6c8;
+    border-radius: 30px;
+    padding: 50px;
+    color: chocolate;
+
+}
+
+.infos .icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e0d6c8;
+    border-radius: 30px;
+    padding: 50px;
+    color: chocolate;
+
+}
+
+.menu h1 {
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    font-size: 50px;
+    margin: 40px;
+}
+
+.menu p {
+    text-align: left;
+    color: black;
+    text-transform: uppercase;
+    margin: 40px;
+
+}
+
+.card-image {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 40px;
+}
+
+
+.has-error img {
+    height: 170px;
+    width: 250px;
+    border-radius: 30px;
+    object-fit: cover;
 
 }
