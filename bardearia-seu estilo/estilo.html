@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .galeria {
+background-color: #111;
+color: #fff;
+padding: 60px 20px;
+text-align: center;
+overflow: hidden;
+}
+
+
+.galeria h2 {
+    color: #ffd700;
+    font-size: 32px;
+    margin: 0 0 15px;
+
+}
+
+.galeria p {
+    color: #ccc;
+    font-size: 16px;
+    margin: 0 0 30px;
+
+}
+
+  .galeria-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax (0, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+   
+
+}
+
+ .corte-card {
+    min-width: 0;
+    background-color: #1c1c1c;
+    border: 1px solid #3a321b;
+    border-radius: 12px;
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: 0.3s ease,
+    
+}
+
+.corte-card img {
+display: block;
+width: 100%;
+height: 220px;
+object-fit: cover;
+
+}
+
+.corte-card h3 {
+    color: #d4af37;
+    font-size: 18px;
+    padding: 15px 10px;
+    margin: 0;
+}
+
+.corte-card:hover {
+    transform: translate(-5px);
+    border-color: #d4af37;
+}
+
+@media (max-width: 768px) {
+    .galeria-container{
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        max-width: 700px;
+    }
+
+.corte-card img {
+    height: 250px;
+}
+}
+
+@media(max-width: 480px){
+    .galeria-container {
+        grid-template-columns: 1fr;
+        max-width: 350px;
+        gap: 20px;
+    }
+
+    .corte-card img {
+        height: 230px;
+    }
+}
+
+@media(max-width: 480px){
+    .galeria .galeria-container {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+
+/*sobre nós */
+
+.sobre-texto {
+    padding: 80px 8%;
+    background-color: #111827;
+
+}
+
+ .sobre-texto h2 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+
+
+ }
+
+ .sobre-texto p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #dddddd;
+    margin-bottom: 25px; }
+
+ .sobre-texto h3 {
+    font-size: 24px; 
+    color: #ffffff;
+    margin-bottom: 15px;
+ }
+
+
+    </style>
+</body>
+</html>
